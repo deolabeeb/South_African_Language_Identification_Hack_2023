@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-22",
+  "checks": [
+    {
+      "name": "pip-check",
+      "command": ".venv/Scripts/python.exe -m pip check",
+      "exit_code": 0,
+      "wall_seconds": 1.878909199993359,
+      "timeout_seconds": 90
+    },
+    {
+      "name": "project-tests",
+      "command": ".venv/Scripts/python.exe -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "wall_seconds": 6.779056300001685,
+      "timeout_seconds": 90
+    },
+    {
+      "name": "cli-help",
+      "command": ".venv/Scripts/python.exe -m sa_lid --help",
+      "exit_code": 0,
+      "wall_seconds": 5.1496273999946425,
+      "timeout_seconds": 90
+    },
+    {
+      "name": "prediction",
+      "command": ".venv/Scripts/python.exe -m sa_lid predict --run .local/portfolio-v1 --text This example sentence is written in English.",
+      "exit_code": 0,
+      "wall_seconds": 6.9789216999924975,
+      "timeout_seconds": 90
+    }
+  ],
+  "unit_tests": 12,
+  "walkthrough_code_cells": 4,
+  "walkthrough_errors": 0,
+  "scope": "Local Windows CPU, synthetic software tests plus separately measured real-data experiment; no cloud or production validation"
+}

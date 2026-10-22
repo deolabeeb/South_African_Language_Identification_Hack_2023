@@ -1,0 +1,1083 @@
+{
+  "audit": {
+    "raw_rows": 33000,
+    "raw_label_counts": {
+      "afr": 3000,
+      "eng": 3000,
+      "nbl": 3000,
+      "nso": 3000,
+      "sot": 3000,
+      "ssw": 3000,
+      "tsn": 3000,
+      "tso": 3000,
+      "ven": 3000,
+      "xho": 3000,
+      "zul": 3000
+    },
+    "retained_unique_texts": 29948,
+    "retained_label_counts": {
+      "afr": 2641,
+      "eng": 2998,
+      "nbl": 2362,
+      "nso": 2873,
+      "sot": 2833,
+      "ssw": 2426,
+      "tsn": 2869,
+      "tso": 2758,
+      "ven": 2605,
+      "xho": 2659,
+      "zul": 2924
+    },
+    "duplicate_rows_collapsed": 3052,
+    "conflicting_label_groups_excluded": 0,
+    "conflicting_rows_excluded": 0,
+    "normalization": "NFKC, casefold, collapse Unicode whitespace; preserve punctuation and diacritics",
+    "near_duplicates_checked": false,
+    "partition_counts": {
+      "train": {
+        "afr": 1585,
+        "eng": 1798,
+        "nbl": 1418,
+        "nso": 1723,
+        "sot": 1700,
+        "ssw": 1456,
+        "tsn": 1721,
+        "tso": 1655,
+        "ven": 1563,
+        "xho": 1595,
+        "zul": 1754
+      },
+      "validation": {
+        "afr": 528,
+        "eng": 600,
+        "nbl": 472,
+        "nso": 575,
+        "sot": 566,
+        "ssw": 485,
+        "tsn": 574,
+        "tso": 552,
+        "ven": 521,
+        "xho": 532,
+        "zul": 585
+      },
+      "holdout": {
+        "afr": 528,
+        "eng": 600,
+        "nbl": 472,
+        "nso": 575,
+        "sot": 567,
+        "ssw": 485,
+        "tsn": 574,
+        "tso": 551,
+        "ven": 521,
+        "xho": 532,
+        "zul": 585
+      }
+    },
+    "partition_sizes": {
+      "train": 17968,
+      "validation": 5990,
+      "holdout": 5990
+    },
+    "normalized_text_overlap": 0,
+    "dataset_sha256": "155cd842622c677434ced8bcdd635facf39d8d139a35dbb671b1eb67bd1a6626"
+  },
+  "validation": {
+    "word_tfidf_nb": {
+      "rows": 5990,
+      "accuracy": 0.9978297161936561,
+      "macro_f1": 0.9978381163661784,
+      "weighted_f1": 0.9978316361744799,
+      "worst_language_f1": 0.9914965986394558,
+      "per_language": {
+        "afr": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 528.0
+        },
+        "eng": {
+          "precision": 0.9917355371900827,
+          "recall": 1.0,
+          "f1-score": 0.995850622406639,
+          "support": 600.0
+        },
+        "nbl": {
+          "precision": 1.0,
+          "recall": 0.9872881355932204,
+          "f1-score": 0.9936034115138592,
+          "support": 472.0
+        },
+        "nso": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 575.0
+        },
+        "sot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 566.0
+        },
+        "ssw": {
+          "precision": 1.0,
+          "recall": 0.9979381443298969,
+          "f1-score": 0.9989680082559339,
+          "support": 485.0
+        },
+        "tsn": {
+          "precision": 1.0,
+          "recall": 0.9982578397212544,
+          "f1-score": 0.999128160418483,
+          "support": 574.0
+        },
+        "tso": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 552.0
+        },
+        "ven": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 521.0
+        },
+        "xho": {
+          "precision": 1.0,
+          "recall": 0.9943609022556391,
+          "f1-score": 0.9971724787935909,
+          "support": 532.0
+        },
+        "zul": {
+          "precision": 0.9864636209813875,
+          "recall": 0.9965811965811966,
+          "f1-score": 0.9914965986394558,
+          "support": 585.0
+        }
+      },
+      "confusion_labels": [
+        "afr",
+        "eng",
+        "nbl",
+        "nso",
+        "sot",
+        "ssw",
+        "tsn",
+        "tso",
+        "ven",
+        "xho",
+        "zul"
+      ],
+      "confusion_matrix": [
+        [
+          528,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          600,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          466,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          0,
+          575,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          566,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          484,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          573,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          552,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          521,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          529,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          583
+        ]
+      ],
+      "fit_seconds": 1.8160615999950096,
+      "predict_seconds": 0.6682233000028646,
+      "features": 60000,
+      "warnings": []
+    },
+    "char_tfidf_svm": {
+      "rows": 5990,
+      "accuracy": 0.9993322203672788,
+      "macro_f1": 0.999356710360331,
+      "weighted_f1": 0.9993326050315539,
+      "worst_language_f1": 0.9975062344139651,
+      "per_language": {
+        "afr": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 528.0
+        },
+        "eng": {
+          "precision": 0.9950248756218906,
+          "recall": 1.0,
+          "f1-score": 0.9975062344139651,
+          "support": 600.0
+        },
+        "nbl": {
+          "precision": 1.0,
+          "recall": 0.9978813559322034,
+          "f1-score": 0.9989395546129375,
+          "support": 472.0
+        },
+        "nso": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 575.0
+        },
+        "sot": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 566.0
+        },
+        "ssw": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 485.0
+        },
+        "tsn": {
+          "precision": 1.0,
+          "recall": 0.9982578397212544,
+          "f1-score": 0.999128160418483,
+          "support": 574.0
+        },
+        "tso": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 552.0
+        },
+        "ven": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 521.0
+        },
+        "xho": {
+          "precision": 1.0,
+          "recall": 0.9981203007518797,
+          "f1-score": 0.9990592662276576,
+          "support": 532.0
+        },
+        "zul": {
+          "precision": 0.9982905982905983,
+          "recall": 0.9982905982905983,
+          "f1-score": 0.9982905982905983,
+          "support": 585.0
+        }
+      },
+      "confusion_labels": [
+        "afr",
+        "eng",
+        "nbl",
+        "nso",
+        "sot",
+        "ssw",
+        "tsn",
+        "tso",
+        "ven",
+        "xho",
+        "zul"
+      ],
+      "confusion_matrix": [
+        [
+          528,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          600,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          471,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          575,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          566,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          485,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          573,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          552,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          521,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          531,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          584
+        ]
+      ],
+      "fit_seconds": 25.49702480000269,
+      "predict_seconds": 7.713348999997834,
+      "features": 135365,
+      "warnings": []
+    }
+  },
+  "holdout": {
+    "rows": 5990,
+    "accuracy": 0.9991652754590985,
+    "macro_f1": 0.9991682894432283,
+    "weighted_f1": 0.9991652032107731,
+    "worst_language_f1": 0.9974380871050385,
+    "per_language": {
+      "afr": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 528.0
+      },
+      "eng": {
+        "precision": 0.9983361064891847,
+        "recall": 1.0,
+        "f1-score": 0.9991673605328892,
+        "support": 600.0
+      },
+      "nbl": {
+        "precision": 1.0,
+        "recall": 0.9957627118644068,
+        "f1-score": 0.9978768577494692,
+        "support": 472.0
+      },
+      "nso": {
+        "precision": 0.9982638888888888,
+        "recall": 1.0,
+        "f1-score": 0.9991311902693311,
+        "support": 575.0
+      },
+      "sot": {
+        "precision": 1.0,
+        "recall": 0.9982363315696648,
+        "f1-score": 0.999117387466902,
+        "support": 567.0
+      },
+      "ssw": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 485.0
+      },
+      "tsn": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 574.0
+      },
+      "tso": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 551.0
+      },
+      "ven": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 521.0
+      },
+      "xho": {
+        "precision": 0.9981203007518797,
+        "recall": 0.9981203007518797,
+        "f1-score": 0.9981203007518797,
+        "support": 532.0
+      },
+      "zul": {
+        "precision": 0.9965870307167235,
+        "recall": 0.9982905982905983,
+        "f1-score": 0.9974380871050385,
+        "support": 585.0
+      }
+    },
+    "confusion_labels": [
+      "afr",
+      "eng",
+      "nbl",
+      "nso",
+      "sot",
+      "ssw",
+      "tsn",
+      "tso",
+      "ven",
+      "xho",
+      "zul"
+    ],
+    "confusion_matrix": [
+      [
+        528,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        600,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        470,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        575,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        566,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        485,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        574,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        551,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        521,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        531,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        584
+      ]
+    ],
+    "selected": "char_tfidf_svm",
+    "predict_seconds": 9.272071700004744,
+    "selection_sha256": "e311a819e53e947727bb2f5a9c20ab4cb553303a9c3723484fa782f545e38ce4",
+    "model_sha256": "9466373738b5fa4dbd7b28aa7996622b8e4cb328df2e6b24595881605f3a62ca",
+    "dataset_sha256": "155cd842622c677434ced8bcdd635facf39d8d139a35dbb671b1eb67bd1a6626",
+    "split_sha256": "511b21bafb7b65d85f057312922abe7939f96382a08abcb27676aa7e31c60b6c",
+    "environment": {
+      "python": "3.12.14",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "scikit_learn": "1.7.2",
+      "numpy": "2.2.6",
+      "scipy": "1.16.2",
+      "joblib": "1.5.2",
+      "threadpoolctl": "3.6.0",
+      "thread_limit": 1
+    },
+    "source_sha256": "e912890e98479ca8f26f2f977509fc518745fd75447e2a9f967bf0aef54d5c92",
+    "metric_scope": "local deduplicated internal holdout; not Kaggle score",
+    "length_slices": {
+      "at_most_80_chars": {
+        "rows": 0,
+        "status": "no examples"
+      },
+      "over_80_chars": {
+        "rows": 5990,
+        "accuracy": 0.9991652754590985,
+        "macro_f1": 0.9991682894432283,
+        "weighted_f1": 0.9991652032107731,
+        "worst_language_f1": 0.9974380871050385,
+        "per_language": {
+          "afr": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 528.0
+          },
+          "eng": {
+            "precision": 0.9983361064891847,
+            "recall": 1.0,
+            "f1-score": 0.9991673605328892,
+            "support": 600.0
+          },
+          "nbl": {
+            "precision": 1.0,
+            "recall": 0.9957627118644068,
+            "f1-score": 0.9978768577494692,
+            "support": 472.0
+          },
+          "nso": {
+            "precision": 0.9982638888888888,
+            "recall": 1.0,
+            "f1-score": 0.9991311902693311,
+            "support": 575.0
+          },
+          "sot": {
+            "precision": 1.0,
+            "recall": 0.9982363315696648,
+            "f1-score": 0.999117387466902,
+            "support": 567.0
+          },
+          "ssw": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 485.0
+          },
+          "tsn": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 574.0
+          },
+          "tso": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 551.0
+          },
+          "ven": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 521.0
+          },
+          "xho": {
+            "precision": 0.9981203007518797,
+            "recall": 0.9981203007518797,
+            "f1-score": 0.9981203007518797,
+            "support": 532.0
+          },
+          "zul": {
+            "precision": 0.9965870307167235,
+            "recall": 0.9982905982905983,
+            "f1-score": 0.9974380871050385,
+            "support": 585.0
+          }
+        },
+        "confusion_labels": [
+          "afr",
+          "eng",
+          "nbl",
+          "nso",
+          "sot",
+          "ssw",
+          "tsn",
+          "tso",
+          "ven",
+          "xho",
+          "zul"
+        ],
+        "confusion_matrix": [
+          [
+            528,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            600,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            470,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            575,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            566,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            485,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            574,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            551,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            521,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            531,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            584
+          ]
+        ]
+      }
+    }
+  },
+  "selected": "char_tfidf_svm",
+  "candidate_configurations": {
+    "word_tfidf_nb": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        1
+      ],
+      "max_features": 60000,
+      "min_df": 1,
+      "sublinear_tf": false,
+      "alpha": 1.0
+    },
+    "char_tfidf_svm": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "max_features": 150000,
+      "min_df": 2,
+      "sublinear_tf": true,
+      "C": 1.0,
+      "max_iter": 3000
+    }
+  },
+  "protocol_sha256": "3feedf09cdc4a0281951617832f67fe681455fc4cbb21ff20e77cd14bf87a991",
+  "source_sha256": "e912890e98479ca8f26f2f977509fc518745fd75447e2a9f967bf0aef54d5c92",
+  "fit_partition": "train only; no train+validation refit",
+  "holdout_used_for_selection": false,
+  "model_sha256": "9466373738b5fa4dbd7b28aa7996622b8e4cb328df2e6b24595881605f3a62ca",
+  "seed": 42
+}
