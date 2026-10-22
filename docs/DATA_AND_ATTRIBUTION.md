@@ -1,0 +1,11 @@
+# Data and attribution
+
+The original repository is Abeeb Adesina Adeola's ExploreAI Academy classification-hackathon work: [South African Language Identification Hack 2023](https://www.kaggle.com/competitions/south-african-language-identification-hack-2023). The task predicts one of eleven language codes in the historical benchmark. This describes that dataset's label set, not the present constitutional count of official languages.
+
+Original repository baseline: `ee2ce6ef6f7a6f431a2573630387d8d64f4375cf`. Historical notebooks, CSVs, saved models, tracking archives and history remain unchanged. No original notebook is represented as a successful clean rerun. The SVM inference cell references an undefined `vectorizer` and later reuses validation predictions when constructing test output. The new package provides a separate, tested inference path rather than silently replacing historical evidence.
+
+The new 2026 work adds package code, a fixed validation protocol, reproducible commands, tests, aggregate reports and a clean walkthrough with Codex assistance. Do not describe it as independently authored or deployed ML work. The owner should explain their original contribution and team context in an interview; generated changes alone do not establish independently assessed proficiency.
+
+Use the existing `data/train_set.csv` for authorized local study. Its provenance is the original competition repository, not a new data release. No original dataset license was present at the baseline and the current Kaggle rules could not be read by the research tool. Do not infer redistribution rights, add a blanket repository license, republish dataset files, upload model artifacts or create a Kaggle submission through this improvement. Obtain any needed rights clarification before a new data/model release. No legal conclusion is made about the historical repository.
+
+New exports contain source, documentation, tests and aggregate metrics only. Local environments, CSVs, model binaries, row-level predictions, source text, tracking archives, internal split indices and credentials are excluded. Existing tracked files are not removed by new ignore rules. Publication is a separately approved file-level update to the original repository, preserving its history.
